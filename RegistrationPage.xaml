@@ -1,4 +1,4 @@
-﻿<Page x:Class="HotelApp.LoginPage"
+﻿<Page x:Class="HotelApp.RegistrationPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,35 +6,45 @@
       xmlns:local="clr-namespace:HotelApp"
       mc:Ignorable="d" 
       d:DesignHeight="550" d:DesignWidth="900"
-      Title="LoginPage">
+      Title="RegistrationPage">
 
     <Grid>
         <StackPanel Grid.Row="1"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Center">
-            
-            <TextBlock Text="Авторизация"
+
+            <TextBlock Text="Регистрация"
                        HorizontalAlignment="Center"
                        FontSize="24"
                        Foreground="{StaticResource TextColor}"/>
 
             <TextBox Style="{StaticResource TextBoxStyle}"
-                     VerticalAlignment="Center"/>
+                     VerticalAlignment="Center"
+                     Name="SurnameTextBox"/>
+
+            <TextBox Style="{StaticResource TextBoxStyle}"
+                     VerticalAlignment="Center"
+                     Name="NameTextBox"/>
+
+            <TextBox Style="{StaticResource TextBoxStyle}"
+                     VerticalAlignment="Center"
+                     Name="LoginTextBox"/>
 
             <PasswordBox Style="{StaticResource TextBoxStyle}"
-                     VerticalAlignment="Center"/>
+                         VerticalAlignment="Center"
+                         Name="PassPasswordBox"/>
 
             <Button Style="{StaticResource ButtonStyle}"
-                    Content="Войти"
-                    Click="Login_Button_Click"/>
+                    Content="Зарегистрироваться"
+                    Click="Registration_Button_Click"/>
 
-            <TextBlock Text="Зарегистрироваться"
+            <TextBlock Text="Назад"
                        HorizontalAlignment="Center"
                        Foreground="{StaticResource ElementsColor}"
                        Margin="0 10 0 0"
                        Cursor="Hand"
                        TextDecorations="Underline"
-                       FontSize="16" MouseDown="Registration_Text_Click"/>
+                       FontSize="16" MouseDown="Go_Back_Text_Click"/>
         </StackPanel>
     </Grid>
 </Page>

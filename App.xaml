@@ -8,8 +8,22 @@
 
             <Style x:Key="TextBoxStyle">
                 <Setter Property="TextBox.Width" Value="300"/>
-                <Setter Property="TextBox.Height" Value="30"/>
+                <Setter Property="TextBox.Height" Value="40"/>
                 <Setter Property="TextBox.Margin" Value="0 20 0 0"/>
+                <Setter Property="TextBox.FontSize" Value="20"/>
+                <Setter Property="TextBox.Background" Value="LightGray"/>
+                <Setter Property="TextBox.BorderThickness" Value="2"/>
+                <Setter Property="TextBox.BorderBrush" Value="{StaticResource SecondaryColor}"/>
+            </Style>
+
+            <Style x:Key="ButtonStyle">
+                <Setter Property="Button.Width" Value="200"/>
+                <Setter Property="Button.Height" Value="40"/>
+                <Setter Property="Button.Background" Value="{StaticResource ElementsColor}"/>
+                <Setter Property="Button.Foreground" Value="{StaticResource TextColor}"/>
+                <Setter Property="Button.Margin" Value="0 20 0 0"/>
+                <Setter Property="Button.FontSize" Value="20"/>
+                <Setter Property="Button.Cursor" Value="Hand"/>
             </Style>
             
             <ResourceDictionary.MergedDictionaries>

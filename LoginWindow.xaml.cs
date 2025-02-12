@@ -22,6 +22,7 @@ namespace HotelApp
         public LoginWindow()
         {
             InitializeComponent();
+            LoginFrame.Content = new LoginPage();
         }
     }
 }

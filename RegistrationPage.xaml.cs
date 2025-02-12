@@ -16,23 +16,23 @@ using System.Windows.Shapes;
 namespace HotelApp
 {
     /// <summary>
-    /// Логика взаимодействия для LoginPage.xaml
+    /// Логика взаимодействия для RegistrationPage.xaml
     /// </summary>
-    public partial class LoginPage : Page
+    public partial class RegistrationPage : Page
     {
-        public LoginPage()
+        public RegistrationPage()
         {
             InitializeComponent();
         }
 
-        private void Login_Button_Click(object sender, RoutedEventArgs e)
+        private void Registration_Button_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
-        private void Registration_Text_Click(object sender, MouseButtonEventArgs e)
+        private void Go_Back_Text_Click(object sender, MouseButtonEventArgs e)
         {
-            NavigationService.Navigate(new RegistrationPage());
+            NavigationService.GoBack();
         }
     }
 }
