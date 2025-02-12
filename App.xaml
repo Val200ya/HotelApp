@@ -1,0 +1,22 @@
+﻿<Application x:Class="HotelApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:HotelApp"
+             StartupUri="LoginWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="TextBoxStyle">
+                <Setter Property="TextBox.Width" Value="300"/>
+                <Setter Property="TextBox.Height" Value="30"/>
+                <Setter Property="TextBox.Margin" Value="0 20 0 0"/>
+            </Style>
+            
+            <ResourceDictionary.MergedDictionaries>
+                
+                <ResourceDictionary Source="ColorDictionary.xaml"/>
+                
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
